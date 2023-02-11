@@ -6,12 +6,12 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const response = await fetch(
-    "https://www.npmjs.com/package/next-sanity#next-sanitypreview-live-real-time-preview"
+    "https://shopee.vn/search?keyword=c%C3%A2y%20lau%20nh%C3%A0&page=0&sortBy=sales"
   );
   const html = await response.text();
 
   const $ = cheerio.load(html);
 
-  const downloads = $("#readme h2").text();
-  return res.json({ downloads });
+  const downloads = $(".r6HknA .uEPGHT").text();
+  return res.json({ html });
 }
