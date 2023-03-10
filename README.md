@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Add .env.local
+NEXT_PUBLIC_SANITY_PROJECT_ID=ndi84g0m
+NEXT_PUBLIC_SANITY_DATASET=production
+NEXT_PUBLIC_SANITY_API_VERSION=2022-11-16
+NEXT_PUBLIC_VERCEL_URL=
+
 ## Getting Started
 
 First, run the development server:
